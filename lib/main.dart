@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'tugas_2_futter.dart';
+import "tugas_2_futter.dart";
 
 void main() {
   runApp(const MyApp());
@@ -29,9 +29,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(
-          seedColor: const Color.fromARGB(255, 255, 238, 0),
-        ),
+        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 88, 83, 3)),
       ),
       home: MyWidget(),
     );
