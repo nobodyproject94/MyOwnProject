@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "tugas_2_futter.dart";
+import 'package:flutter_application_1/splash_screen_maestronesia.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 88, 83, 3)),
       ),
-      home: MyWidget(),
+      home: LoginPage1(),
     );
   }
 }
