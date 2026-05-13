@@ -15,7 +15,7 @@ class Welcomescreen extends StatelessWidget {
             child: Image.asset('assets/images/logo.png'),
           ),
           const Text(
-            'solutions, accuracy, damn expertise',
+            'solutions, accuracy, expertise',
             style: TextStyle(color: Colors.white),
           ),
         ],
