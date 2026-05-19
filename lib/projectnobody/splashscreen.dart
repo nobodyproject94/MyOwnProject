@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/extension/navigator.dart';
+import 'package:flutter_application_1/projectnobody/textForm.dart';
 
 class Splashscreen extends StatelessWidget {
   const Splashscreen({super.key});
@@ -13,9 +14,11 @@ class Splashscreen extends StatelessWidget {
           Center(child: Image.asset('assets/images/logo maestronesia.png')),
           ElevatedButton(
             onPressed: () {
-              context.pushNamed("/login");
+              // context.pushNamed("/login");
+              // context.push(Textrich());
+              context.push(Textform());
             },
-            child: Text('ke login page'),
+            child: Text('sign up here'),
           ),
         ],
       ),
