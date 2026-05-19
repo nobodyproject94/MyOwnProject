@@ -102,7 +102,7 @@ class _Tugas6FlutterState extends State<LoginScreenMaestronesia> {
                         // validator email
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'This field is equired';
+                            return 'Email field is equired';
                           }
                           // cek format email pakai regex sederhana
                           if (!RegExp(
