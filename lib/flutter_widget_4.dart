@@ -11,14 +11,19 @@ class _FlutterWidget4State extends State<FlutterWidget4> {
   int nilaiCounter = 0;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('practice stf 1')),
-    body: Column(
-
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text('$nilaiCounter', style: TextStyle(fontSize: 40),)
-      ],
-    ),
+    return Scaffold(
+      appBar: AppBar(title: Text('practice stf 1')),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              //context.push(Navigasi());
+            },
+            child: Text('Sign out'),
+          ),
+        ],
+      ),
     );
   }
 }

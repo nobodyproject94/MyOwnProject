@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/login_screen_maestronesia.dart';
+import 'package:flutter_application_1/navigsi.dart';
+import 'package:flutter_application_1/projectnobody/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,12 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 88, 83, 3)),
       ),
-      home: LoginScreenMaestronesia(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Splashscreen(),
+        '/login': (context) => Navigasi(),
+      },
+      //  home: Navigasi(),
     );
   }
 }
